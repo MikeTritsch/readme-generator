@@ -1,8 +1,8 @@
-# README Test
+# Test
 
 ## Description
 
-Lorem ipsum fhdhwhdwhfcwef. ahfuwevwqe EDHfwehfwfw vcjwjfwhfewf.
+test
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -17,15 +17,15 @@ Lorem ipsum fhdhwhdwhfcwef. ahfuwevwqe EDHfwehfwfw vcjwjfwhfewf.
 
 ## Installation
 
-N/A
+test
 
 ## Usage
 
-1 2 3 4 5
+test
 
 ## Credits
 
-Me myself and the tutor
+test
 
 ## License
 
@@ -33,15 +33,15 @@ MIT License
 
 ## Tests
 
-none
+test
 
 ## Questions?
 
-Feel free to contact me via email at tritsch.mike@gmail.com
+Feel free to contact me via email at test
 
 or
 
-Follow me on [GitHub](miketritsch)
+Follow me on [GitHub](https://github.com/test)
 
 ---
 
