@@ -4,6 +4,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const { generate } = require('rxjs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -56,16 +57,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-inquirer.prompt(questions);
+function writeToFile(fileName, data) {
+    generateMarkdown(data)
+    fs.writeFile('README.md', generateMarkdown(data))
+}
 
 // Call functions from generate markdown
 // fs.writeFile(fileName, generatemarkdown(data))
 
 // TODO: Create a function to initialize app
 // Inquirer questions should be here
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then((response) => {
+        writeToFile('README.md', response)
+    })
+}
 
 // .then((reponse) => {
     // writeToFile(README.md, response)
