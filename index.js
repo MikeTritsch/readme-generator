@@ -32,7 +32,7 @@ const questions = [
             type: 'list',
             name: 'license',
             message: 'Select your desired license here:',
-            choices: ['MIT License', 'Apache 2.0 License', 'GNU GPLv3', 'Boost Software License 1.0', 'ISC License (ISC)', 'Mozilla Public License 2.0', ''],
+            choices: ['MIT License', 'Apache 2.0 License', 'GNU GPLv3', 'Boost Software License 1.0', 'ISC License (ISC)', 'Mozilla Public License 2.0', 'None'],
         },
         {
             type: 'input',
@@ -59,7 +59,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     generateMarkdown(data)
-    fs.writeFile('TESTREADME.md', generateMarkdown(data), function(err) {
+    fs.writeFile('TESTREADME3.md', generateMarkdown(data), function(err) {
         err ? console.error(err) : console.log('Success! Generating README...')
     })
 }
@@ -75,10 +75,6 @@ function init() {
         writeToFile('README.md', response)
     })
 }
-
-// .then((reponse) => {
-    // writeToFile(README.md, response)
-// })
 
 // Function call to initialize app
 init();

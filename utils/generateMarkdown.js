@@ -22,11 +22,10 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 // TOC
 function renderLicenseLink(license) {
-  if (license) {
-  return '- [License](#license)'
-  } else {
-    return '';
+  if (license !== 'None') {
+  return `\n - [License](#license)\n`
   }
+    return '';
 }
 
 // TODO: Create a function that returns the license section of README
