@@ -33,9 +33,42 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 // License section itself
 function renderLicenseSection(license) {
+  if (license === 'MIT License') {
+    return `## License 
 
+    This application is covered under the MIT License. For more information, click the badge at the top of the README.`
+  } else if (license === 'Apache 2.0 License') {
+    return `## License
+
+    This application is covered under the Apache 2.0 License. For more information, click the badge at the top of the README.`
+  } else if (license === 'GNU GPLv3') {
+    return `## License
+    
+    This application is covered under the GNU GPLv3 License. For more information, click the badge at the top of the README.`
+  } else if (license ===  'Boost Software License 1.0') {
+    return `## License
+    
+    This application is covered under the Boost Software 1.0 License. For more information, click the badge at the top of the README.`
+  } else if (license ===  'ISC License (ISC)') {
+    return `## License
+    
+    This application is covered under the ISC License. For more information, click the badge at the top of the README.`
+  } else if (license === 'Mozilla Public License 2.0') {
+    return `## License
+    
+    This application is covered under the Mozilla Public License 2.0. For more information, click the badge at the top of the README.`
+  } else {
+    return '';
+  }
 }
-// call badge, call link
+
+// if (license) {
+//   return `## License
+
+//   Please refer to the license within the repository`
+// } else {
+//   return '';
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -68,9 +101,7 @@ ${data.usage}
 
 ${data.contributions}
 
-## License
-
-${data.license}
+${renderLicenseSection(data.license)}
 
 ## Tests
 

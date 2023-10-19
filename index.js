@@ -11,49 +11,49 @@ const questions = [
         {
             type: 'input',
             name: 'title',
-            message: 'What is the title of your app/project?'
+            message: 'What is the title of your app/project?',
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Enter a 2-4 sentence description of your app/project:'
+            message: 'Enter a 2-4 sentence description of your app/project:',
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'List any installation instructions (if none, type "N/A"):'
+            message: 'List any installation instructions (if none, type "N/A"):',
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'List all steps needed to successfully use your application:'
+            message: 'List all steps needed to successfully use your application:',
         },
         {
             type: 'list',
             name: 'license',
             message: 'Select your desired license here:',
-            choices: ['MIT License', 'Apache 2.0 License', 'GNU GPLv3', 'Boost Software License 1.0', 'ISC License (ISC)', 'Mozilla Public License 2.0', '']
+            choices: ['MIT License', 'Apache 2.0 License', 'GNU GPLv3', 'Boost Software License 1.0', 'ISC License (ISC)', 'Mozilla Public License 2.0', ''],
         },
         {
             type: 'input',
             name: 'contributions',
-            message: 'List the names of people (space separated) you worked with to complete this application/project:'
+            message: 'List the names of people (space separated) you worked with to complete this application/project:',
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Provide any tests you wrote for this application with instructions on how to run them:'
+            message: 'Provide any tests you wrote for this application with instructions on how to run them:',
         },
         {
             type: 'input',
             name: 'questions',
-            message: 'Enter your GitHub username:'
+            message: 'Enter your GitHub username:',
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your email addresss:'
-        }
+            message: 'Enter your email addresss:',
+        },
 ];
 
 // TODO: Create a function to write README file
