@@ -1,3 +1,4 @@
+// License badge functions
 function renderLicenseBadge(license) {
   if (license === 'MIT License') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
@@ -16,6 +17,7 @@ function renderLicenseBadge(license) {
   }
 }
 
+// Table of contents license addition, if needed
 function renderLicenseLink(license) {
   if (license !== 'None') {
   return `- [License](#license)`
@@ -23,6 +25,7 @@ function renderLicenseLink(license) {
     return '';
 }
 
+// Adding a license notice to the license section, if needed
 function renderLicenseSection(license) {
   if (license === 'MIT License') {
     return `## License 
@@ -53,6 +56,7 @@ function renderLicenseSection(license) {
   }
 }
 
+// Generating actual README file
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -102,4 +106,5 @@ Follow me on [GitHub](https://github.com/${data.questions})
 `;
 }
 
+//Making file available for export
 module.exports = generateMarkdown;

@@ -1,8 +1,10 @@
+// Importing packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const { generate } = require('rxjs');
 
+// Inquirer questions array, labelled accordingly to what they represent (save questions, which refers to the GitHub profile link)
 const questions = [
         {
             type: 'input',
@@ -52,16 +54,18 @@ const questions = [
         },
 ];
 
-
+// writeToFile function, taking in generateMarkdown from generateMarkdown.js
 function writeToFile(fileName, data) {
     generateMarkdown(data)
     fs.writeFile('none.md', generateMarkdown(data), function(err) {
+        // Error handling
         err ? console.error(err) : console.log('Success! Generating README...')
     })
 }
-
+// Fires off inquirer questions in the command line/terminal
 function init() {
     inquirer.prompt(questions)
+    // Waiting for the user generated data, and then calling write to file
     .then((response) => {
         writeToFile('README.md', response)
     })
