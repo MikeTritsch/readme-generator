@@ -40,6 +40,10 @@ Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
 
 5. View your read me in the file stack or code editor!
 
+## Credits
+
+Source code provided by the University of Texas at Austin Full Stack Bootcamp
+
 ## License
 
 MIT License
