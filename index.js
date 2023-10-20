@@ -57,7 +57,7 @@ const questions = [
 // writeToFile function, taking in generateMarkdown from generateMarkdown.js
 function writeToFile(fileName, data) {
     generateMarkdown(data)
-    fs.writeFile('none.md', generateMarkdown(data), function(err) {
+    fs.writeFile('README.md', generateMarkdown(data), function(err) {
         // Error handling
         err ? console.error(err) : console.log('Success! Generating README...')
     })
